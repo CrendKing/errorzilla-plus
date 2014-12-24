@@ -1,0 +1,44 @@
+﻿<!ENTITY ezp.pref.title					"ErrorZilla Plus設定">
+<!ENTITY ezp.pref.ok					"OK">
+<!ENTITY ezp.pref.tab.tools				"ツール">
+<!ENTITY ezp.pref.tab.proxy				"プロキシ">
+<!ENTITY ezp.pref.tools.general			"基本">
+<!ENTITY ezp.pref.tools.newtab			"ツールを新しいタブかウインドウで開く">
+<!ENTITY ezp.pref.tools.retry.caption	"自動再試行">
+<!ENTITY ezp.pref.tools.retry.enable	"自動で再試行する">
+<!ENTITY ezp.pref.tools.retry.timeout	"タイムアウトエラーの時のみ">
+<!ENTITY ezp.pref.tools.retry.int		"再試行の間隔 (秒)">
+<!ENTITY ezp.pref.tools.urls			"URLs">
+<!ENTITY ezp.pref.tools.urls.desc1		"URLは">
+<!ENTITY ezp.pref.tools.urls.desc2		"のプロパティに対応しています。プロパティ名を{と}の間に入力してください。">
+<!ENTITY ezp.pref.tools.googlecache		"Googleキャッシュ">
+<!ENTITY ezp.pref.tools.coralize		"Coralize">
+<!ENTITY ezp.pref.tools.wayback			"Wayback">
+<!ENTITY ezp.pref.tools.ping			"Ping">
+<!ENTITY ezp.pref.tools.trace			"Trace">
+<!ENTITY ezp.pref.tools.whois			"Whois">
+<!ENTITY ezp.pref.tools.proxify			"Proxify">
+<!ENTITY ezp.pref.tools.reset			"初期化">
+<!ENTITY ezp.pref.proxy.add				"追加">
+<!ENTITY ezp.pref.proxy.edit			"編集">
+<!ENTITY ezp.pref.proxy.remove			"削除">
+<!ENTITY ezp.pref.proxy.clear			"クリア">
+<!ENTITY ezp.pref.proxy.import			"インポート">
+<!ENTITY ezp.pref.proxy.export			"エクスポート">
+<!ENTITY ezp.pref.proxy.replace			"置換">
+<!ENTITY ezp.pref.proxy.append			"付加">
+
+<!ENTITY ezp.proxy.add					"プロキシを追加">
+<!ENTITY ezp.proxy.edit					"プロキシを編集">
+<!ENTITY ezp.proxy.grpbasic				"ベーシック">
+<!ENTITY ezp.proxy.name					"名前">
+<!ENTITY ezp.proxy.url					"URLプレフィックス">
+<!ENTITY ezp.proxy.grpencoding			"URLエンコード">
+<!ENTITY ezp.proxy.enc_short			"エンコード">
+<!ENTITY ezp.proxy.enc_long				"エンコードのアルゴリズム">
+<!ENTITY ezp.proxy.enc.none				"無し">
+<!ENTITY ezp.proxy.enc.base64			"Base64">
+<!ENTITY ezp.proxy.enc.rot13			"ROT13">
+<!ENTITY ezp.proxy.trim_short			"トリム">
+<!ENTITY ezp.proxy.trim_long			"エンコード時にプロトコルをトリム">
+<!ENTITY ezp.proxy.test					"テスト">

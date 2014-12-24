@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/javascript" src="ezp.js" />
+	<script type="application/javascript" src="toolsPref.js" />
+	<script type="application/javascript" src="proxySvc.js" />
+	<script type="application/javascript" src="patcher.js" />
+	<script type="application/javascript">
+		window.addEventListener('load', ezp.HookPageLoad, false);
+	</script>
+</overlay>

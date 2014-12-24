@@ -1,0 +1,44 @@
+<!ENTITY ezp.pref.title					"ErrorZilla Plus Preference">
+<!ENTITY ezp.pref.ok					"OK">
+<!ENTITY ezp.pref.tab.tools				"Tools">
+<!ENTITY ezp.pref.tab.proxy				"Proxy">
+<!ENTITY ezp.pref.tools.general			"General">
+<!ENTITY ezp.pref.tools.newtab			"Open tools in new tabs or windows">
+<!ENTITY ezp.pref.tools.retry.caption	"AutoRetry">
+<!ENTITY ezp.pref.tools.retry.enable	"Enable AutoRetry">
+<!ENTITY ezp.pref.tools.retry.timeout	"Only on timeout errors">
+<!ENTITY ezp.pref.tools.retry.int		"Retry interval (seconds)">
+<!ENTITY ezp.pref.tools.urls			"URLs">
+<!ENTITY ezp.pref.tools.urls.desc1		"The URLs support properties from the">
+<!ENTITY ezp.pref.tools.urls.desc2		"object. Put property name between { and }.">
+<!ENTITY ezp.pref.tools.googlecache		"Google Cache">
+<!ENTITY ezp.pref.tools.coralize		"Coralize">
+<!ENTITY ezp.pref.tools.wayback			"Wayback">
+<!ENTITY ezp.pref.tools.ping			"Ping">
+<!ENTITY ezp.pref.tools.trace			"Trace">
+<!ENTITY ezp.pref.tools.whois			"Whois">
+<!ENTITY ezp.pref.tools.proxify			"Proxify">
+<!ENTITY ezp.pref.tools.reset			"Reset">
+<!ENTITY ezp.pref.proxy.add				"Add">
+<!ENTITY ezp.pref.proxy.edit			"Edit">
+<!ENTITY ezp.pref.proxy.remove			"Remove">
+<!ENTITY ezp.pref.proxy.clear			"Clear">
+<!ENTITY ezp.pref.proxy.import			"Import">
+<!ENTITY ezp.pref.proxy.export			"Export">
+<!ENTITY ezp.pref.proxy.replace			"Replace">
+<!ENTITY ezp.pref.proxy.append			"Append">
+
+<!ENTITY ezp.proxy.add					"Add Proxy">
+<!ENTITY ezp.proxy.edit					"Edit Proxy">
+<!ENTITY ezp.proxy.grpbasic				"Basic">
+<!ENTITY ezp.proxy.name					"Name">
+<!ENTITY ezp.proxy.url					"URL Prefix">
+<!ENTITY ezp.proxy.grpencoding			"URL Encoding">
+<!ENTITY ezp.proxy.enc_short			"Encoding">
+<!ENTITY ezp.proxy.enc_long				"Encoding algorithm">
+<!ENTITY ezp.proxy.enc.none				"None">
+<!ENTITY ezp.proxy.enc.base64			"Base64">
+<!ENTITY ezp.proxy.enc.rot13			"ROT13">
+<!ENTITY ezp.proxy.trim_short			"Trim">
+<!ENTITY ezp.proxy.trim_long			"Trim protocol when encoding">
+<!ENTITY ezp.proxy.test					"Test">

@@ -1,0 +1,44 @@
+<!ENTITY ezp.pref.title					"Inställningar för ErrorZilla Plus">
+<!ENTITY ezp.pref.ok					"OK">
+<!ENTITY ezp.pref.tab.tools				"Verktyg">
+<!ENTITY ezp.pref.tab.proxy				"Proxy">
+<!ENTITY ezp.pref.tools.general			"Allmänt">
+<!ENTITY ezp.pref.tools.newtab			"Öppna verktyg i nya flikar eller fönster">
+<!ENTITY ezp.pref.tools.retry.caption	"Uppdatera automatiskt">
+<!ENTITY ezp.pref.tools.retry.enable	"Aktivera Uppdatera automatiskt">
+<!ENTITY ezp.pref.tools.retry.timeout	"Endast vid tidsgränsfel">
+<!ENTITY ezp.pref.tools.retry.int		"Uppdateringsintervall (s)">
+<!ENTITY ezp.pref.tools.urls			"URL:er">
+<!ENTITY ezp.pref.tools.urls.desc1		"URL:erna stödjer egenskaper för objektet">
+<!ENTITY ezp.pref.tools.urls.desc2		". Placera egenskapsnamnet mellan { och }.">
+<!ENTITY ezp.pref.tools.googlecache		"Google Cache">
+<!ENTITY ezp.pref.tools.coralize		"Coralize">
+<!ENTITY ezp.pref.tools.wayback			"Wayback">
+<!ENTITY ezp.pref.tools.ping			"Pinga">
+<!ENTITY ezp.pref.tools.trace			"Spåra">
+<!ENTITY ezp.pref.tools.whois			"Whois">
+<!ENTITY ezp.pref.tools.proxify			"Proxify">
+<!ENTITY ezp.pref.tools.reset			"Återställ">
+<!ENTITY ezp.pref.proxy.add				"Lägg till">
+<!ENTITY ezp.pref.proxy.edit			"Redigera">
+<!ENTITY ezp.pref.proxy.remove			"Ta bort">
+<!ENTITY ezp.pref.proxy.clear			"Rensa">
+<!ENTITY ezp.pref.proxy.import			"Importera">
+<!ENTITY ezp.pref.proxy.export			"Exportera">
+<!ENTITY ezp.pref.proxy.replace			"Ersätt">
+<!ENTITY ezp.pref.proxy.append			"Bifoga">
+
+<!ENTITY ezp.proxy.add					"Lägg till proxy">
+<!ENTITY ezp.proxy.edit					"Redigera proxy">
+<!ENTITY ezp.proxy.grpbasic				"Grundläggande">
+<!ENTITY ezp.proxy.name					"Namn">
+<!ENTITY ezp.proxy.url					"URL-prefix">
+<!ENTITY ezp.proxy.grpencoding			"URL-kodning">
+<!ENTITY ezp.proxy.enc_short			"Kodning">
+<!ENTITY ezp.proxy.enc_long				"Kodningsalgoritm">
+<!ENTITY ezp.proxy.enc.none				"Ingen">
+<!ENTITY ezp.proxy.enc.base64			"Base64">
+<!ENTITY ezp.proxy.enc.rot13			"ROT13">
+<!ENTITY ezp.proxy.trim_short			"Trimma">
+<!ENTITY ezp.proxy.trim_long			"Trimma protokollet vid kodning">
+<!ENTITY ezp.proxy.test					"Testa">

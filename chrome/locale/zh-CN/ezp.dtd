@@ -1,0 +1,44 @@
+<!ENTITY ezp.pref.title					"ErrorZilla Plus 设置">
+<!ENTITY ezp.pref.ok					"确定">
+<!ENTITY ezp.pref.tab.tools				"工具">
+<!ENTITY ezp.pref.tab.proxy				"代理">
+<!ENTITY ezp.pref.tools.general			"通用">
+<!ENTITY ezp.pref.tools.newtab			"在新标签或窗口中使用工具">
+<!ENTITY ezp.pref.tools.retry.caption	"自动重试">
+<!ENTITY ezp.pref.tools.retry.enable	"启用自动重试">
+<!ENTITY ezp.pref.tools.retry.timeout	"仅在超时错误时自动重试">
+<!ENTITY ezp.pref.tools.retry.int		"重试间隔（秒）">
+<!ENTITY ezp.pref.tools.urls			"地址">
+<!ENTITY ezp.pref.tools.urls.desc1		"以下地址支持">
+<!ENTITY ezp.pref.tools.urls.desc2		"对象的属性值。请将属性名用 { 和 } 括起来。">
+<!ENTITY ezp.pref.tools.googlecache		"Google 缓存">
+<!ENTITY ezp.pref.tools.coralize			"使用 Coral 网络">
+<!ENTITY ezp.pref.tools.wayback			"历史版本">
+<!ENTITY ezp.pref.tools.ping				"Ping">
+<!ENTITY ezp.pref.tools.trace				"路由追踪">
+<!ENTITY ezp.pref.tools.whois				"域名查询">
+<!ENTITY ezp.pref.tools.proxify			"代理化">
+<!ENTITY ezp.pref.tools.reset			"重置">
+<!ENTITY ezp.pref.proxy.add				"添加">
+<!ENTITY ezp.pref.proxy.edit			"编辑">
+<!ENTITY ezp.pref.proxy.remove			"删除">
+<!ENTITY ezp.pref.proxy.clear			"清空">
+<!ENTITY ezp.pref.proxy.import			"导入">
+<!ENTITY ezp.pref.proxy.export			"导出">
+<!ENTITY ezp.pref.proxy.replace			"替换">
+<!ENTITY ezp.pref.proxy.append			"追加">
+
+<!ENTITY ezp.proxy.add					"添加代理">
+<!ENTITY ezp.proxy.edit					"编辑代理">
+<!ENTITY ezp.proxy.grpbasic				"基本信息">
+<!ENTITY ezp.proxy.name					"名称">
+<!ENTITY ezp.proxy.url					"URL 前缀">
+<!ENTITY ezp.proxy.grpencoding			"URL 编码">
+<!ENTITY ezp.proxy.enc_short			"编码">
+<!ENTITY ezp.proxy.enc_long				"编码算法">
+<!ENTITY ezp.proxy.enc.none				"不编码">
+<!ENTITY ezp.proxy.enc.base64			"Base64">
+<!ENTITY ezp.proxy.enc.rot13			"ROT13">
+<!ENTITY ezp.proxy.trim_short			"去协议">
+<!ENTITY ezp.proxy.trim_long			"编码时去掉协议">
+<!ENTITY ezp.proxy.test					"测试">

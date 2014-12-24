@@ -1,0 +1,10 @@
+content	ezp	chrome/content/	contentaccessible=yes
+
+skin	ezp	default	chrome/skin/
+
+locale	ezp	en-US	chrome/locale/en-US/
+locale  ezp	zh-CN   chrome/locale/zh-CN/
+locale  ezp	ja-JP	chrome/locale/ja-JP/
+locale  ezp	sv-SE	chrome/locale/sv-SE/
+
+overlay	chrome://browser/content/browser.xul	chrome://ezp/content/overlay.xul

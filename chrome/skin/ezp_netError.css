@@ -1,0 +1,64 @@
+html
+{
+	background-image: url("chrome://ezp/skin/firefox.png");
+	background-repeat: no-repeat;
+	background-position: 5% 4em;
+}
+
+#errorPageContainer
+{
+	max-width: 520px;
+}
+
+#ezpTools > div
+{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ezpTools button
+{
+	float: left;
+	width: 125px;
+	margin-right: 5px;
+}
+
+#ezpProxyList
+{
+	width: 515px;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+#ezpProxyList tr
+{
+	border: thin solid gray;
+}
+
+#ezpProxyList > thead > tr
+{
+	background-color: ButtonFace;
+	color: ButtonText;
+}
+
+#ezpProxyList > tbody > tr
+{
+	cursor: pointer;
+}
+
+#ezpProxyList > tbody > tr:hover
+{
+	background-color: Highlight;
+	color: HighlightText;
+}
+
+#ezpProxyList > tbody td.center
+{
+	text-align: center;
+}
+
+#ezpProxyList > tbody td.checked
+{
+	background: url("chrome://global/skin/checkbox/cbox-check.gif") no-repeat center center;
+}

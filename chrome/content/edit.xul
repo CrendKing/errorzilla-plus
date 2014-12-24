@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+<?xml-stylesheet href="chrome://ezp/skin/ezp_dialog.css" type="text/css" ?>
+<!DOCTYPE dialog SYSTEM "chrome://ezp/locale/ezp.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	title="&ezp.proxy.edit;"
+	buttons="accept,cancel,extra1"
+	buttonlabelextra1="&ezp.proxy.test;"
+	onload="LoadCurrentProxy();"
+	ondialogaccept="return TryProxy('edit');"
+	ondialogextra1="return TryProxy('test');">
+	
+	<script type="application/javascript" src="ezp.js" />
+	<script type="application/javascript" src="proxyUI.js" />
+	
+	<groupbox>
+		<caption label="&ezp.proxy.grpbasic;" />
+		<grid>
+			<columns>
+				<column />
+				<column flex="1" />
+			</columns>
+		    <rows>
+				<row align="center">
+					<label value="&ezp.proxy.name;" control="uiName" />
+					<textbox id="uiName" maxlength="40" flex="1" />
+				</row>
+				<row align="center">
+					<label value="&ezp.proxy.url;" control="uiURL" />
+					<textbox id="uiURL" flex="1" />
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+
+	<groupbox>
+		<caption label="&ezp.proxy.grpencoding;" />
+		<hbox align="center">
+			<label value="&ezp.proxy.enc_long;" control="uiEncode" />
+			<menulist id="uiEncode">
+				<menupopup>
+					<menuitem label="&ezp.proxy.enc.none;" value="None" />
+					<menuitem label="&ezp.proxy.enc.base64;" value="Base64" />
+					<menuitem label="&ezp.proxy.enc.rot13;" value="ROT13" />
+				</menupopup>
+			</menulist>
+		</hbox>
+		
+		<checkbox id="uiTrim" label="&ezp.proxy.trim_long;" />
+	</groupbox>
+
+	<label id="uiStatus" value="" />
+	<progressmeter id="uiProgress" mode="undetermined" hidden="true" />
+</dialog>

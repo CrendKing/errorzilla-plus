@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+<?xml-stylesheet href="chrome://ezp/skin/ezp_pref.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://ezp/skin/ezp_checkbox.css" type="text/css" ?>
+<!DOCTYPE prefwindow SYSTEM "chrome://ezp/locale/ezp.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="ezp_pref"
+	title="&ezp.pref.title;">
+
+	<script type="application/javascript" src="ezp.js" />
+	<script type="application/javascript" src="toolsPref.js" />
+	<script type="application/javascript" src="proxySvc.js" />
+	<script type="application/javascript" src="util.js" />
+
+	<prefpane id="toolsPane"
+		label="&ezp.pref.tab.tools;"
+		image="chrome://ezp/skin/tools.png">
+    	<preferences>
+			<preference id="newTab" name="extensions.errorzillaplus.tools.newtab" type="bool" />
+			<preference id="retryEnable" name="extensions.errorzillaplus.tools.retry_enable" type="bool" />
+			<preference id="retryTimeout" name="extensions.errorzillaplus.tools.retry_timeout" type="bool" />
+			<preference id="retryInt" name="extensions.errorzillaplus.tools.retry_interval" type="int" />
+			<preference id="googleCache" name="extensions.errorzillaplus.tools.googlecache" type="string" />
+			<preference id="coralize" name="extensions.errorzillaplus.tools.coralize" type="string" />
+			<preference id="wayback" name="extensions.errorzillaplus.tools.wayback" type="string" />
+			<preference id="ping" name="extensions.errorzillaplus.tools.ping" type="string" />
+			<preference id="trace" name="extensions.errorzillaplus.tools.trace" type="string" />
+			<preference id="whois" name="extensions.errorzillaplus.tools.whois" type="string" />
+		</preferences>
+
+		<vbox>
+			<groupbox>
+				<caption label="&ezp.pref.tools.general;" />
+				<checkbox id="newTab" preference="newTab" label="&ezp.pref.tools.newtab;" />
+			</groupbox>
+			<groupbox>
+				<caption label="&ezp.pref.tools.retry.caption;" />
+				<grid>
+					<columns>
+						<column />
+						<column />
+					</columns>
+					<rows>
+						<row align="center">
+							<checkbox id="retryEnable" preference="retryEnable" label="&ezp.pref.tools.retry.enable;" />
+							<checkbox id="retryTimeout" preference="retryTimeout" label="&ezp.pref.tools.retry.timeout;" flex="1" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.retry.int;" control="retryInt" />
+							<textbox id="retryInt" preference="retryInt" type="number" min="1" max="3600" />
+						</row>
+					</rows>
+				</grid>
+			</groupbox>
+			<groupbox>
+				<caption label="&ezp.pref.tools.urls;" />
+				<description>&ezp.pref.tools.urls.desc1;<label class="text-link" href="https://developer.mozilla.org/en/DOM/window.location#Properties" value="Location" />&ezp.pref.tools.urls.desc2;</description>
+				<grid>
+					<columns>
+						<column />
+						<column />
+					</columns>
+					<rows>
+						<row align="center">
+							<label value="&ezp.pref.tools.googlecache;" control="googleCache" />
+							<textbox id="googleCache" preference="googleCache" size="60" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.coralize;" control="coralize" />
+							<textbox id="coralize" preference="coralize" size="60" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.wayback;" control="wayback" />
+							<textbox id="wayback" preference="wayback" size="60" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.ping;" control="ping" />
+							<textbox id="ping" preference="ping" size="60" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.trace;" control="trace" />
+							<textbox id="trace" preference="trace" size="60" />
+						</row>
+						<row align="center">
+							<label value="&ezp.pref.tools.whois;" control="whois" />
+							<textbox id="whois" preference="whois" size="60" />
+						</row>
+					</rows>
+				</grid>
+			</groupbox>
+			<hbox>
+				<spacer orient="horizontal" flex="1" />
+				<button label="&ezp.pref.tools.reset;" oncommand="ezp.toolsPref.Reset();" />
+			</hbox>
+		</vbox>
+	</prefpane>
+	<prefpane id="proxyPane"
+		label="&ezp.pref.tab.proxy;"
+		image="chrome://ezp/skin/proxy.png"
+		onpaneload="ezp.proxySvc.LoadProxyTree();">
+		<hbox>
+			<tree id="proxyTree" flex="1" enableColumnDrag="1">
+				<treecols>
+					<treecol id="name" label="&ezp.proxy.name;" />
+					<splitter class="tree-splitter" />
+					<treecol id="url" label="&ezp.proxy.url;" flex="1" />
+					<splitter class="tree-splitter" />
+					<treecol id="enc" label="&ezp.proxy.enc_short;" style="text-align: center" />
+					<splitter class="tree-splitter" />
+					<treecol id="trim" label="&ezp.proxy.trim_short;" type="checkbox" />
+				</treecols>
+				<treechildren ondblclick="if (document.getElementById('proxyTree').currentIndex != -1) ezp.proxySvc.ShowWindow('edit.xul');" />
+			</tree>
+			<vbox>
+				<button label="&ezp.pref.proxy.add;" oncommand="ezp.proxySvc.ShowWindow('add.xul');"/>
+				<button label="&ezp.pref.proxy.edit;" oncommand="if (document.getElementById('proxyTree').currentIndex != -1) ezp.proxySvc.ShowWindow('edit.xul');"/>
+				<spacer flex="1" orient="vertical" />
+				<button label="&ezp.pref.proxy.remove;" oncommand="ezp.proxySvc.RemoveSel();" />
+				<button label="&ezp.pref.proxy.clear;" oncommand="ezp.proxySvc.RemoveAll();" />
+				<spacer flex="1" orient="vertical" />
+				<button label="&ezp.pref.proxy.import;" oncommand="document.getElementById('importMenu').openPopup(this, 'end_before', -1, -1, false, false);" />
+				<button label="&ezp.pref.proxy.export;" oncommand="ezp.proxySvc.Export();" />
+			</vbox>
+			<popupset>
+				<menupopup id="importMenu">
+					<menuitem label="&ezp.pref.proxy.replace;" oncommand="ezp.proxySvc.Import(true);" />
+					<menuitem label="&ezp.pref.proxy.append;" oncommand="ezp.proxySvc.Import(false);" />
+				</menupopup>
+			</popupset>
+		</hbox>
+	</prefpane>
+</prefwindow>

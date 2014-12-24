@@ -1,0 +1,11 @@
+pref('extensions.errorzillaplus.tools.newtab', false);
+pref('extensions.errorzillaplus.tools.retry_enable', false);
+pref('extensions.errorzillaplus.tools.retry_timeout', true);
+pref('extensions.errorzillaplus.tools.retry_interval', 5);
+pref('extensions.errorzillaplus.tools.googlecache', 'http://webcache.googleusercontent.com/search?q=cache:{href}');
+pref('extensions.errorzillaplus.tools.coralize', 'http://{hostname}.nyud.net:8080{pathname}');
+pref('extensions.errorzillaplus.tools.wayback', 'http://web.archive.org/web/*/{href}');
+pref('extensions.errorzillaplus.tools.ping', 'http://www.domaintools.com/research/ping/?query={hostname}');
+pref('extensions.errorzillaplus.tools.trace', 'http://www.dnsstuff.com/tools/tracert/?ip={hostname}');
+pref('extensions.errorzillaplus.tools.whois', 'http://whois.domaintools.com/{hostname}');
+pref('extensions.errorzillaplus.proxies', '[]');
